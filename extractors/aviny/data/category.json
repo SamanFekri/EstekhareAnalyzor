@@ -1,0 +1,22 @@
+{
+  "VeryGood": {
+    "name": "حتما انجام بده",
+    "value": 2
+  },
+  "Good": {
+    "name": "انجام بده",
+    "value": 1
+  },
+  "Neutral": {
+    "name": "اختیار با توست",
+    "value": 0
+  },
+  "Bad": {
+    "name": "انجام نده",
+    "value": -1
+  },
+  "VeryBad": {
+    "name": "هرگز انجام نده",
+    "value": -2
+  }
+}
