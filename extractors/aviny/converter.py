@@ -10,8 +10,7 @@ def load_categories(file_path):
   for key, value in data.items():
     result[value['name']] = {
       'category': value['value'],
-      'label': key,
-      'result_text': value['name'],
+      'label': key
     }
   
   return result
@@ -55,7 +54,7 @@ print("✅ Data saved to JSONNL file successfully")
 # Save the data with the category as csv
 print("💾 Saving data to CSV file:", output_path_csv)
 with open(output_path_csv, 'w', encoding='utf-8', newline='') as f:
-  writer = csv.DictWriter(f, fieldnames=['page', 'result', 'result_text', 'general_result', 'marriage_result', 'trade_result', 'category', 'label'])
+  writer = csv.DictWriter(f, fieldnames=['page', 'result', 'general_result', 'marriage_result', 'trade_result', 'category', 'label'])
   writer.writeheader()
   for item in data:
     writer.writerow(item)
